@@ -1,0 +1,1 @@
+%K\ARM\ARMCC\bin\fromelf.exe --bincombined --bincombined_padding=1,0x00 --output=../OBJ/ECU_40WP_C.bin ../OBJ/ECU_40WP_C.axf

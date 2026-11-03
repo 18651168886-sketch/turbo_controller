@@ -1,0 +1,29 @@
+# MATLAB / Simulink caches and automatic backups
+**/slprj/
+*.slxc
+*.asv
+*.autosave
+*.slx.autosave
+*.slx.bak
+*.mdl.bak
+
+# Keil / C build intermediates (retain source and firmware images)
+**/OBJ/
+*.o
+*.obj
+*.axf
+*.map
+*.lst
+*.crf
+*.dep
+*.d
+*.lnp
+*.uvguix.*
+JLinkLog.txt
+JLinkScript.jlink
+
+# Operating system temporary files
+Thumbs.db
+desktop.ini
+.DS_Store
+*~

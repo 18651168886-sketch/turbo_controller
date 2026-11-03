@@ -1,0 +1,7 @@
+# Keep Simulink models and MATLAB data byte-for-byte unchanged.
+*.slx binary
+*.slxc binary
+*.mat binary
+*.mexw32 binary
+*.mexw64 binary
+*.png binary

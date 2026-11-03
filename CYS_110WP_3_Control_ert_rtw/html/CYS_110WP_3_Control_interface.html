@@ -1,0 +1,987 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="rtwreport.css" /><script language="JavaScript" type="text/javascript">function rtwTableShrink(o) {var t = o.nextSibling;if (t.nodeType != 1) {t = t.nextSibling;}if (t.style.display == "none") {t.style.display = "";o.innerHTML = "[-]"} else {t.style.display = "none";o.innerHTML = "[+] ... "}}</script><script language="JavaScript" type="text/javascript" src="rtwreport_utils.js"></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>
+Code Interface Report for CYS_110WP_3_Control
+</title>
+
+</head>
+<body ONLOAD="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdCodeInterface'); else local_onload();}} catch(err) {};">
+<h1>
+Code Interface Report for CYS_110WP_3_Control
+</h1>
+<h3>
+Table of Contents
+</h3>
+<ul>
+<li>
+<a href="#sec_Entry_Point_Functions">
+Entry Point Functions
+</a>
+
+</li>
+<li>
+<a href="#sec_Inports">
+Inports
+</a>
+
+</li>
+<li>
+<a href="#sec_Outports">
+Outports
+</a>
+
+</li>
+<li>
+<a href="#sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</li>
+<li>
+<a href="#sec_Data_Stores">
+Data Stores
+</a>
+
+</li>
+
+</ul>
+<h3>
+<a name="sec_Entry_Point_Functions">
+Entry Point Functions
+</a>
+
+</h3>
+<p>
+Function: <a href="CYS_110WP_3_Control_c.html#fcn_ECU_110WP_C_Control_initialize">ECU_110WP_C_Control_initialize</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void ECU_110WP_C_Control_initialize(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Initialization entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called exactly once
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="CYS_110WP_3_Control_h.html">CYS_110WP_3_Control.h</a>
+</td>
+
+</tr>
+
+</table>
+<p>
+Function: <a href="CYS_110WP_3_Control_c.html#fcn_ECU_110WP_C_Control_Run">ECU_110WP_C_Control_Run</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void ECU_110WP_C_Control_Run(uint8_T&nbsp;*arg_Flag_rx_suc, uint8_T arg_MyUsart2_Rxdata[50], uint8_T&nbsp;*arg_Flag_ECUReset, uint8_T arg_ECUReset_Information[20], uint8_T arg_MySet_Rxdata[50], real32_T arg_Nc, real32_T arg_T4, real32_T arg_S_Vpower, real32_T arg_Tecu, uint8_T arg_SWI_Firework, uint8_T arg_SWI_EValve, uint8_T arg_SWI_Eblast, uint8_T arg_SWI_ValveErr, uint8_T arg_SWI_BleedAir, real32_T arg_POil, real32_T arg_T0, EngineControl_Out&nbsp;*arg_Controldata, SaveData_Out&nbsp;*arg_savedata, SendData_Out&nbsp;*arg_senddata)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Output entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called periodically, every 0.02 seconds
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th align="left" valign="top">
+<b>
+#
+</b>
+
+</th>
+<th align="left" valign="top">
+<b>
+Name
+</b>
+
+</th>
+<th align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th align="left" valign="top">
+<b>
+Description
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td align="right" valign="top">
+1
+</td>
+<td align="left" valign="top">
+arg_Flag_rx_suc
+</td>
+<td align="left" valign="top">
+uint8_T&nbsp;*
+</td>
+<td align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532697')" name="code2model" class="code2model">&lt;Root&gt;/Flag_rx_suc</a>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="right" valign="top">
+2
+</td>
+<td align="left" valign="top">
+arg_MyUsart2_Rxdata
+</td>
+<td align="left" valign="top">
+uint8_T
+</td>
+<td align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532698')" name="code2model" class="code2model">&lt;Root&gt;/MyUsart2_Rxdata</a>
+</td>
+
+</tr>
+<tr class="even">
+<td align="right" valign="top">
+3
+</td>
+<td align="left" valign="top">
+arg_Flag_ECUReset
+</td>
+<td align="left" valign="top">
+uint8_T&nbsp;*
+</td>
+<td align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532699')" name="code2model" class="code2model">&lt;Root&gt;/Flag_ECUReset</a>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="right" valign="top">
+4
+</td>
+<td align="left" valign="top">
+arg_ECUReset_Information
+</td>
+<td align="left" valign="top">
+uint8_T
+</td>
+<td align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532700')" name="code2model" class="code2model">&lt;Root&gt;/ECUReset_Information</a>
+</td>
+
+</tr>
+<tr class="even">
+<td align="right" valign="top">
+5
+</td>
+<td align="left" valign="top">
+arg_MySet_Rxdata
+</td>
+<td align="left" valign="top">
+uint8_T
+</td>
+<td align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532701')" name="code2model" class="code2model">&lt;Root&gt;/MySet_Rxdata</a>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="right" valign="top">
+6
+</td>
+<td align="left" valign="top">
+arg_Nc
+</td>
+<td align="left" valign="top">
+real32_T
+</td>
+<td align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532702')" name="code2model" class="code2model">&lt;Root&gt;/Nc</a>
+</td>
+
+</tr>
+<tr class="even">
+<td align="right" valign="top">
+7
+</td>
+<td align="left" valign="top">
+arg_T4
+</td>
+<td align="left" valign="top">
+real32_T
+</td>
+<td align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532703')" name="code2model" class="code2model">&lt;Root&gt;/T4</a>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="right" valign="top">
+8
+</td>
+<td align="left" valign="top">
+arg_S_Vpower
+</td>
+<td align="left" valign="top">
+real32_T
+</td>
+<td align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532704')" name="code2model" class="code2model">&lt;Root&gt;/S_Vpower</a>
+</td>
+
+</tr>
+<tr class="even">
+<td align="right" valign="top">
+9
+</td>
+<td align="left" valign="top">
+arg_Tecu
+</td>
+<td align="left" valign="top">
+real32_T
+</td>
+<td align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532705')" name="code2model" class="code2model">&lt;Root&gt;/Tecu</a>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="right" valign="top">
+10
+</td>
+<td align="left" valign="top">
+arg_SWI_Firework
+</td>
+<td align="left" valign="top">
+uint8_T
+</td>
+<td align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532706')" name="code2model" class="code2model">&lt;Root&gt;/SWI_Firework</a>
+</td>
+
+</tr>
+<tr class="even">
+<td align="right" valign="top">
+11
+</td>
+<td align="left" valign="top">
+arg_SWI_EValve
+</td>
+<td align="left" valign="top">
+uint8_T
+</td>
+<td align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532707')" name="code2model" class="code2model">&lt;Root&gt;/SWI_EValve</a>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="right" valign="top">
+12
+</td>
+<td align="left" valign="top">
+arg_SWI_Eblast
+</td>
+<td align="left" valign="top">
+uint8_T
+</td>
+<td align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532708')" name="code2model" class="code2model">&lt;Root&gt;/SWI_Eblast</a>
+</td>
+
+</tr>
+<tr class="even">
+<td align="right" valign="top">
+13
+</td>
+<td align="left" valign="top">
+arg_SWI_ValveErr
+</td>
+<td align="left" valign="top">
+uint8_T
+</td>
+<td align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532709')" name="code2model" class="code2model">&lt;Root&gt;/SWI_ValveErr</a>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="right" valign="top">
+14
+</td>
+<td align="left" valign="top">
+arg_SWI_BleedAir
+</td>
+<td align="left" valign="top">
+uint8_T
+</td>
+<td align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532710')" name="code2model" class="code2model">&lt;Root&gt;/SWI_BleedAir</a>
+</td>
+
+</tr>
+<tr class="even">
+<td align="right" valign="top">
+15
+</td>
+<td align="left" valign="top">
+arg_POil
+</td>
+<td align="left" valign="top">
+real32_T
+</td>
+<td align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532711')" name="code2model" class="code2model">&lt;Root&gt;/POil</a>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="right" valign="top">
+16
+</td>
+<td align="left" valign="top">
+arg_T0
+</td>
+<td align="left" valign="top">
+real32_T
+</td>
+<td align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532712')" name="code2model" class="code2model">&lt;Root&gt;/T0</a>
+</td>
+
+</tr>
+<tr class="even">
+<td align="right" valign="top">
+17
+</td>
+<td align="left" valign="top">
+arg_Controldata
+</td>
+<td align="left" valign="top">
+EngineControl_Out&nbsp;*
+</td>
+<td align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:535255')" name="code2model" class="code2model">&lt;Root&gt;/Controldata</a>
+</td>
+
+</tr>
+<tr class="odd">
+<td align="right" valign="top">
+18
+</td>
+<td align="left" valign="top">
+arg_savedata
+</td>
+<td align="left" valign="top">
+SaveData_Out&nbsp;*
+</td>
+<td align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:535256')" name="code2model" class="code2model">&lt;Root&gt;/savedata</a>
+</td>
+
+</tr>
+<tr class="even">
+<td align="right" valign="top">
+19
+</td>
+<td align="left" valign="top">
+arg_senddata
+</td>
+<td align="left" valign="top">
+SendData_Out&nbsp;*
+</td>
+<td align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:535257')" name="code2model" class="code2model">&lt;Root&gt;/senddata</a>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="CYS_110WP_3_Control_h.html">CYS_110WP_3_Control.h</a>
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Inports">
+Inports
+</a>
+
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Block Name
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532697')" name="code2model" class="code2model">&lt;Root&gt;/Flag_rx_suc</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Defined externally
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532698')" name="code2model" class="code2model">&lt;Root&gt;/MyUsart2_Rxdata</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Defined externally
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+[50]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532699')" name="code2model" class="code2model">&lt;Root&gt;/Flag_ECUReset</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Defined externally
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532700')" name="code2model" class="code2model">&lt;Root&gt;/ECUReset_Information</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Defined externally
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+[20]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532701')" name="code2model" class="code2model">&lt;Root&gt;/MySet_Rxdata</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Defined externally
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+[50]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532702')" name="code2model" class="code2model">&lt;Root&gt;/Nc</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Defined externally
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532703')" name="code2model" class="code2model">&lt;Root&gt;/T4</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Defined externally
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532704')" name="code2model" class="code2model">&lt;Root&gt;/S_Vpower</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Defined externally
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532705')" name="code2model" class="code2model">&lt;Root&gt;/Tecu</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Defined externally
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532706')" name="code2model" class="code2model">&lt;Root&gt;/SWI_Firework</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Defined externally
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532707')" name="code2model" class="code2model">&lt;Root&gt;/SWI_EValve</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Defined externally
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532708')" name="code2model" class="code2model">&lt;Root&gt;/SWI_Eblast</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Defined externally
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532709')" name="code2model" class="code2model">&lt;Root&gt;/SWI_ValveErr</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Defined externally
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532710')" name="code2model" class="code2model">&lt;Root&gt;/SWI_BleedAir</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Defined externally
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532711')" name="code2model" class="code2model">&lt;Root&gt;/POil</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Defined externally
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:532712')" name="code2model" class="code2model">&lt;Root&gt;/T0</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Defined externally
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Outports">
+Outports
+</a>
+
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Block Name
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:535255')" name="code2model" class="code2model">&lt;Root&gt;/Controldata</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Defined externally
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+EngineControl_Out
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:535256')" name="code2model" class="code2model">&lt;Root&gt;/savedata</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Defined externally
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+SaveData_Out
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('CYS_110WP_3_Control:535257')" name="code2model" class="code2model">&lt;Root&gt;/senddata</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Defined externally
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+SendData_Out
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</h3>
+<table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Parameter Source
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+PF_ACCFULLRANGE
+</td>
+<td width="26%" align="left" valign="top">
+CYS_110WP_3_Control_P.PF_ACCFULLRANGE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+PF_Gear_Info
+</td>
+<td width="26%" align="left" valign="top">
+CYS_110WP_3_Control_P.PF_Gear_Info
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+[12   1]
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Data_Stores">
+Data Stores
+</a>
+
+</h3>
+<p>
+No data stores in the model; note that this report lists only data stores with non-auto storage class and global data stores
+</p>
+
+</body>
+
+</html>
